@@ -24,14 +24,21 @@ const StatsCards = () => {
         <div
           key={item.title}
           className="
-          rounded-2xl
-          border border-zinc-800
-          bg-zinc-900/70
-          backdrop-blur-lg
-          p-5
-          hover:border-violet-500/40
-          transition
-          "
+            rounded-2xl
+            border border-zinc-800
+            bg-gradient-to-br from-zinc-900 to-zinc-950
+            backdrop-blur-lg
+            p-5
+            transition-all
+            duration-300
+
+            hover:scale-[1.02]
+            hover:border-violet-500/40
+            hover:shadow-lg
+            hover:shadow-violet-500/10
+            hover:-translate-y-1
+
+            "
         >
           <p className="text-zinc-400 text-sm">
             {item.title}

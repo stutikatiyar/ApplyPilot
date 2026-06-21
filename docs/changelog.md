@@ -129,3 +129,19 @@ v0.4.0
 - Responsive card layout
 - Glassmorphism styling
 - Dashboard welcome section
+
+## v0.4.1 - Dashboard UI Enhancement
+
+### Added
+
+- Search bar
+- Placement Progress card
+- AI Recommendation card
+- Improved sidebar branding
+- Dashboard overview section
+
+### UI Improvements
+
+- Active navigation styling
+- Improved spacing hierarchy
+- CareerOS brand identity
