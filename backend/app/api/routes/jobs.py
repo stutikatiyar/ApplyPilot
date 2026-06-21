@@ -27,3 +27,7 @@ async def add_job(job: JobCreate):
         "message": "Job Created",
         "job_id": job_id
     }
+@router.get("/")
+async def fetch_jobs():
+    jobs = await get_all_jobs()
+    return jobs

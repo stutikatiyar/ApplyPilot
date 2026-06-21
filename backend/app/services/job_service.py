@@ -28,3 +28,20 @@ async def create_job(job_data: dict):
     )
 
     return str(result.inserted_id)
+
+# Get all jobs from MongoDB
+async def get_all_jobs():
+
+    jobs = []
+
+    cursor = database.jobs.find()
+
+    async for job in cursor:
+
+        # MongoDB ObjectId is not JSON serializable
+        # Convert it to string
+        job["_id"] = str(job["_id"])
+
+        jobs.append(job)
+
+    return jobs

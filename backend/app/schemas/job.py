@@ -1,42 +1,12 @@
-"""
-FILE: job.py
-
-PURPOSE:
-Validate incoming job data.
-
-WHY?
-
-Clients can send anything.
-
-Example:
-
-{
-  "title": 123
-}
-
-This should be rejected.
-
-Pydantic validates data before it reaches
-our business logic.
-
-INTERVIEW QUESTION:
-What is schema validation?
-
-Answer:
-Ensuring incoming data follows
-the expected structure and types.
-"""
-
 from pydantic import BaseModel
+from datetime import datetime
 
 
 class JobCreate(BaseModel):
-
     title: str
-    company: strav
+    company: str
     location: str
-
-
-class JobResponse(JobCreate):
-
-    id: str
+    job_url: str
+    source: str
+    status: str = "SCRAPED"
+    created_at: datetime = datetime.utcnow()
