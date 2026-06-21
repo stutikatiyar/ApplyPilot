@@ -1,34 +1,51 @@
-Database Selection
+# Jobs Collection
 
-Chosen Database: MongoDB
+## Purpose
 
-Reasoning:
+Stores job opportunities collected from external platforms and user actions.
 
-Flexible document structure
-Dynamic AI-generated fields
-Easier schema evolution
-Fast prototyping
-Suitable for job and analytics data
+---
 
-Alternative Considered: PostgreSQL
+## Document Structure
 
-Tradeoff:
-
-PostgreSQL offers stronger relational modeling and transactional guarantees.
-MongoDB provides greater flexibility for evolving job documents and AI-generated metadata.
-
-## Connection Verification
-
-Endpoint:
-
-GET /db-test
-
-Purpose:
-
-Verify FastAPI can successfully access MongoDB.
-
-Response:
-
+```json
 {
-  "database": "careeros"
+  "_id": "...",
+
+  "title": "Software Engineer Intern",
+
+  "company": "Google",
+
+  "location": "Bangalore",
+
+  "job_url": "https://linkedin.com/job/...",
+
+  "source": "LinkedIn",
+
+  "status": "SCRAPED",
+
+  "created_at": "2026-06-21T10:00:00"
 }
+```
+
+---
+
+## Status Lifecycle
+
+```text
+SCRAPED
+   ↓
+APPLIED
+   ↓
+INTERVIEW
+   ↓
+OFFER
+```
+
+Alternative States:
+
+```text
+REJECTED
+ARCHIVED
+WITHDRAWN
+```
