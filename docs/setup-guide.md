@@ -45,3 +45,10 @@ If the red styling appears, Tailwind is configured successfully.
 
 ```
 ```
+### Frontend Dependencies
+
+Install required packages:
+
+npm install react-icons
+
+npm install recharts

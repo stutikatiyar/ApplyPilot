@@ -12,6 +12,15 @@ The system combines browser automation, backend services, analytics, and AI-powe
 
 ## ✨ Key Features
 
+### Dashboard Features
+
+* Application tracking dashboard
+* Interactive analytics charts
+* AI-powered career insights
+* Recent applications overview
+* Status-based application monitoring
+* Modern responsive UI
+
 ### 🔍 Smart Job Collection
 
 * Capture jobs directly from LinkedIn, Naukri, Indeed, Wellfound, and other platforms
