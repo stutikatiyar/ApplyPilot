@@ -120,3 +120,12 @@ Establish the frontend architecture for the CareerOS dashboard.
 * Tailwind CSS utility classes
 * Vite plugin configuration
 * Frontend project organization
+
+v0.4.0
+
+### Added
+
+- Dashboard statistics cards
+- Responsive card layout
+- Glassmorphism styling
+- Dashboard welcome section
