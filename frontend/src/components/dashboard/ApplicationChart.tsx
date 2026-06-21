@@ -18,15 +18,30 @@ const data = [
 
 const ApplicationChart = () => {
   return (
-    <div className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6 mt-8">
-      <h2 className="text-xl font-semibold text-white mb-6">
+    <div
+  className="rounded-2xl p-6 mt-8"
+  style={{
+    backgroundColor: "var(--card)",
+    border: "1px solid var(--border)",
+  }}
+>
+      <h2
+  className="text-xl font-semibold mb-6"
+  style={{ color: "var(--text)" }}
+>
         Application Trends
       </h2>
 
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={data}>
-          <XAxis dataKey="month" stroke="#a1a1aa" />
-          <YAxis stroke="#a1a1aa" />
+         <XAxis
+  dataKey="month"
+  stroke="var(--muted)"
+/>
+
+<YAxis
+  stroke="var(--muted)"
+/>
 <Tooltip
   contentStyle={{
     backgroundColor: "#111827",

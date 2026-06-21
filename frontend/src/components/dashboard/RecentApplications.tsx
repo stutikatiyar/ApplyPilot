@@ -28,8 +28,17 @@ const jobs = [
 
 const RecentApplications = () => {
   return (
-    <div className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6 mt-8">
-      <h2 className="text-xl font-semibold text-white mb-5">
+    <div
+  className="rounded-2xl p-6 mt-8"
+  style={{
+    backgroundColor: "var(--card)",
+    border: "1px solid var(--border)",
+  }}
+>
+      <h2
+  className="text-xl font-semibold mb-5"
+  style={{ color: "var(--text)" }}
+>
         Recent Applications
       </h2>
 
@@ -37,14 +46,23 @@ const RecentApplications = () => {
         {jobs.map((job) => (
           <div
             key={job.company}
-            className="flex justify-between items-center border-b border-zinc-800 pb-3"
+            className="flex justify-between items-center pb-3"
+style={{
+  borderBottom: "1px solid var(--border)",
+}}
           >
             <div>
-              <h3 className="text-white font-medium">
+             <h3
+  className="font-medium"
+  style={{ color: "var(--text)" }}
+>
                 {job.role}
               </h3>
 
-              <p className="text-zinc-400 text-sm">
+              <p
+  className="text-sm"
+  style={{ color: "var(--muted)" }}
+>
                 {job.company}
               </p>
             </div>
