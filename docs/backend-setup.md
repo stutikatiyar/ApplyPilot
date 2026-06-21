@@ -435,3 +435,178 @@ Database
 ```
 
 This architecture keeps the project scalable, maintainable, and suitable for production-level development.
+
+## Health Check Endpoint
+
+Purpose:
+
+Verify that the FastAPI application is running correctly.
+
+Endpoint:
+
+GET /
+
+Response:
+
+{
+  "message": "CareerOS Backend Running 🚀"
+}
+
+# Request Lifecycle
+
+When a user visits:
+
+```text
+http://127.0.0.1:8000/
+```
+
+the following sequence occurs:
+
+```text
+Browser
+   ↓
+FastAPI Server
+   ↓
+Route Matching
+   ↓
+Python Function Execution
+   ↓
+JSON Response
+   ↓
+Browser
+```
+
+Detailed Flow:
+
+1. Browser sends an HTTP GET request.
+2. FastAPI receives the request.
+3. FastAPI checks registered routes.
+4. Route "/" is matched.
+5. Function `root()` executes.
+6. Python dictionary is returned.
+7. FastAPI converts dictionary into JSON.
+8. Browser displays the response.
+
+This process forms the foundation of all future API interactions.
+
+
+# Concepts Learned
+
+## FastAPI
+
+A modern Python framework used to build APIs.
+
+Role in CareerOS:
+
+```text
+Chrome Extension
+        ↓
+FastAPI
+        ↓
+MongoDB
+        ↓
+React Dashboard
+```
+
+FastAPI acts as the communication layer between all components.
+
+---
+
+## Route
+
+A route maps a URL to a Python function.
+
+Example:
+
+```python
+@app.get("/")
+```
+
+Meaning:
+
+```text
+URL
+ ↓
+Function
+```
+
+---
+
+## Endpoint
+
+An endpoint is a URL exposed by the backend.
+
+Examples:
+
+```text
+/
+/jobs
+/analytics
+```
+
+---
+
+## Health Check Endpoint
+
+A lightweight endpoint used to verify that the server is operational.
+
+Purpose:
+
+* Verify backend startup
+* Verify request processing
+* Verify API availability
+# Interview Questions
+
+## Q1. Why did you choose FastAPI?
+
+Answer:
+
+* High performance
+* Automatic API documentation
+* Built-in validation using Pydantic
+* Async support
+* Cleaner architecture compared to traditional frameworks
+
+---
+
+## Q2. What is a Route?
+
+A route maps a URL path to a backend function.
+
+Example:
+
+```python
+@app.get("/")
+```
+
+---
+
+## Q3. What is an Endpoint?
+
+An endpoint is the URL exposed by the backend application.
+
+Example:
+
+```text
+http://localhost:8000/jobs
+```
+
+---
+
+## Q4. What is a Health Check Endpoint?
+
+A health check endpoint is used to determine whether the server is running correctly.
+
+Example:
+
+```text
+GET /
+```
+
+Response:
+
+```json
+{
+  "message": "CareerOS Backend Running"
+}
+```
