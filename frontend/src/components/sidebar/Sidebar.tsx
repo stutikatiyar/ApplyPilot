@@ -9,7 +9,7 @@ const Sidebar = () => {
   {/* Logo */}
   <div className="mb-12">
     <h1 className="text-3xl font-bold text-white">
-      Career<span className="text-violet-500">OS</span>
+      Career<span className="text-blue-500">OS</span>
     </h1>
 
     <p className="text-xs text-zinc-500 mt-1">
@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   {/* Navigation */}
   <nav className="space-y-4">
-       <div className="flex items-center gap-3 bg-violet-500/15 border border-violet-500/20 rounded-xl p-3 text-violet-400 cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:border-violet-400 hover:bg-violet-500/20">
+     <div className="flex items-center gap-3 bg-blue-500/15 border border-blue-500/20 rounded-xl p-3 text-blue-400 cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:border-blue-400 hover:bg-blue-500/20">
   <MdDashboard size={20} />
   <span>Dashboard</span>
 </div>
