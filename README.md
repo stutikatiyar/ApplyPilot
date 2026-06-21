@@ -49,10 +49,31 @@ The system combines browser automation, backend services, analytics, and AI-powe
 * React
 * TypeScript
 * Vite
-* Tailwind CSS
-* Framer Motion
-* React Query
-* DnD Kit
+* Tailwind CSS v4
+* React Icons
+* Framer Motion (Planned)
+* DnD Kit (Planned)
+
+### Frontend Dashboard
+
+CareerOS includes a modern dashboard interface for managing opportunities and tracking applications.
+
+Current UI Modules:
+
+* Sidebar Navigation
+* Dashboard Layout
+* Jobs Page
+* Analytics Page
+* Settings Page
+
+Planned Modules:
+
+* Kanban Job Board
+* AI Match Insights
+* Opportunity Analytics
+* Skill Gap Dashboard
+* Resume Intelligence Center
+
 
 ### Backend
 
