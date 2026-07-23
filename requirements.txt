@@ -1,0 +1,24 @@
+fastapi
+uvicorn[standard]
+
+# Database
+motor
+pymongo
+
+# Configuration
+python-dotenv
+pydantic
+pydantic-settings
+
+# Web Scraping
+httpx
+beautifulsoup4
+lxml
+playwright
+fake-useragent
+
+# Data Validation
+python-multipart
+
+# Utilities
+python-dateutil
